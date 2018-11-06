@@ -9,7 +9,7 @@ end
 #Then("deberia ver la ventana {string} con las opciones {string}, {string}, {string}") do |string, string2, string3, string4|
  #   expect(page).to have_select(string, with_options: [string2, string3, string4])  
 #end
-Given("visito la pagina configurar y selecciono la opcion {string} jugadores de la ventana {string}") do |string, string2|    visit('/configurarPartida') 
+Given("visito la pagina configurar y selecciono la opcion {string} jugadores de la ventana {string}") do |string, string2|    
     visit('/configurarPartida') 
     expect(page).to have_select(string2,selected:[string])
 end

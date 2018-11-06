@@ -13,9 +13,7 @@ class App < Sinatra::Base
 
     
     post '/juego' do
-       
         @cantidadJugadores=params[:Cantidadjugadores].to_i
-       
         erb:juego
     end 
 end

@@ -5,6 +5,6 @@ Feature: Ver tablero
 
     Scenario: Mostrar tablero de juego.
         Given visito la pagina jugar
-        Then deberia ver el tablero "cuadradoYPuntosTabla" del juego 
+        Then deberia ver el tablero "tablero" del juego 
     
         
