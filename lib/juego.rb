@@ -8,7 +8,7 @@ class Juego
         @tablero = Tablero.new(tamanio) unless tamanio.nil?
         @jugador1 = Jugador.new(nombre1, color1) unless nombre1.nil?
         @jugador2 = Jugador.new(nombre2, color2) unless nombre2.nil?
-        @jugadorEnTurno = Jugador.new(nombre1, color1) unless nombre1.nil?
+        @jugadorEnTurno = Jugador.new() 
         @turno = 1
     end
 
@@ -58,11 +58,13 @@ class Juego
 
 
     def ingresarJugador1(jugador1)
+        @jugador1=Jugador.new()
         @jugador1=jugador1
-        @jugadorEnTurno=jugador1
+        @jugadorEnTurno=@jugador1
     end
 
     def ingresarJugador2(jugador2)
+        @jugador2=Jugador.new()
         @jugador2=jugador2
     end
     
