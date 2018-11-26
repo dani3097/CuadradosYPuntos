@@ -1,17 +1,26 @@
-<p>Fin del Juego</p>
-<br />
-<p>Gano el jugador:</p>
-<p style='color: <%= @colorGanador %>;' /><%= @nombreGanador %><p/>   
-
-<p>Resultados: </p>
-<label style='color: <%= @colorJugador1 %>;' /><%= @nombre1 %><label/>
-<label/><%= @puntaje1 %></label>
-<br />
-<label style='color: <%= @colorJugador2 %>;' /><%= @nombre2 %><label/>
-<label/><%= @puntaje2 %></label>
-
-<form action="/">
-    <button>
-        Volver a jugar
-    </button>
-</form>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>Cuadrados y puntos</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/juego.css"/>
+  </head>
+  <body>
+    <div class="page-header center" align="center"><h3>Fin del Juego</h3></div>
+    <div class="container" align="center">
+        <p>Gano el jugador:</p>
+        <p style='color: <%= @colorGanador %>;' /><%= @nombreGanador %><p/>   
+        <p>Resultados: </p>
+        <p style='color: <%= @colorJugador1 %>;' /><%= @nombre1 %>&nbsp<label/>
+        <label/><%= @puntaje1 %></p>
+        <p style='color: <%= @colorJugador2 %>;' /><%= @nombre2 %>&nbsp<label/>
+        <label/><%= @puntaje2 %></p>
+        <form action="/">
+            <button class="btn btn-primary">
+                Volver a jugar
+            </button>
+        </form>
+    </div>
+   </body>
+</html>
